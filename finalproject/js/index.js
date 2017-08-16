@@ -1,3 +1,4 @@
+
 function onSignIn(googleUser) {
     console.log('User signed in!');
     var profile = googleUser.getBasicProfile();
@@ -5,7 +6,8 @@ function onSignIn(googleUser) {
     $(".userName").text(profile.getName());
     $("img").attr("src", profile.getImageUrl());
     $(".email").text(profile.getEmail());
-    $("#or").append(  "<a class='btn btn-default'href='file:///C:/Users/ASC%20Guest/desktop/imani/finalprojectgamelist/indexhtml'role='button'>Enter</a>");
+    $("#or").append(  "<a class='btn btn-default'href='file:///C:/Users/ASC%20Guest/desktop/imani/finalprojectgamelist/index.html'role='button'>Enter</a>");
+    $('#myAnchor').click();
 }
 
 
